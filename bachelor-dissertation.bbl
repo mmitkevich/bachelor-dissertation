@@ -1,0 +1,547 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
+\ifx\undefined\def#1{\emph{#1}}\else\fi
+
+\bibitem{golant}
+\selectlanguageifdefined{russian}
+{Голант,~В.~Е.} Основы физики плазмы~/
+  В.~Е.~Голант, А.~П.~Жилинский, И.~Е.~Сахаров. ---
+\newblock Москва : Атомиздат, 1977. ---
+\newblock 384~{с.}
+
+\bibitem{kotelnikov2008}
+\selectlanguageifdefined{russian}
+{Котельников,~И.~А.} Генезис плазмы, или
+  история одного слова~/ И.~А.~Котельников~//
+  {Вестник Новосибирского государственного
+  университета. Серия: Физика}. ---
+\newblock 2008. ---
+\newblock Т.~3, {№}~2. ---
+\newblock {С.}~23--28.
+
+\bibitem{archenovich}
+\selectlanguageifdefined{russian}
+{Арцимович,~Л.~А.} Физика плазмы для физиков~/
+  Л.~А.~Арцимович, Р.~З.~Сагдеев. ---
+\newblock Москва : Атомиздат, 1979. ---
+\newblock 320~{с.}
+
+\bibitem{sivuhin5}
+\selectlanguageifdefined{russian}
+{Сивухин,~Д.~В.} Общий курс физики: В 5 т. Т. 5.
+  Атомная и ядерная физика~/ Д.~В.~Сивухин. ---
+\newblock Москва : Физматлит, МФТИ, 2002. ---
+\newblock 784~{с.}
+
+\bibitem{lukyanov}
+\selectlanguageifdefined{russian}
+{Лукьянов,~С.~Ю.} Горячая плазма и
+  управляемый термоядерный синтез: Учеб.
+  для вузов~/ С.~Ю.~Лукьянов, Н.~Г.~Ковальский.
+  ---
+\newblock Москва : НАУКА, 1999. ---
+\newblock 397~{с.}
+
+\bibitem{dnestrovsky}
+\selectlanguageifdefined{russian}
+{Днестровский,~Ю.~Н.} Математическое
+  моделирование плазмы~/ Ю.~Н.~Днестровский,
+  Д.~П.~Костомаров. ---
+\newblock Москва : Физматлит, 1993. ---
+\newblock 336~{с.}
+
+\bibitem{Lawson}
+\selectlanguageifdefined{english}
+{Lawson,~J.~D.} Some Criteria for a Power Producing Thermonuclear Reactor~/
+  J.~D.~Lawson~// {Proceedings of the Physical Society. Section B}. ---
+\newblock 1957. ---
+\newblock Vol.~70, №~1. ---
+\newblock P.~6.
+
+\bibitem{kotelnikov}
+\selectlanguageifdefined{russian}
+{Котельников,~И.~А.} Лекции по физике плазмы~/
+  И.~А.~Котельников, Г.~В.~Ступаков. ---
+\newblock Новосибирск, 1996. ---
+\newblock 138~{с.}
+
+\bibitem{gamma10_history}
+\selectlanguageifdefined{english}
+History of GAMMA10 [Electronic resource]. ---
+\newblock The University of Tsukuba. ---
+\newblock 2016. ---
+\newblock Mode of access:
+  \BibUrl{http://www.prc.tsukuba.ac.jp/en/?page_id=447} (date of access:
+  31.01.2016).
+
+\bibitem{gamma10_review}
+\selectlanguageifdefined{english}
+Overview of Axisymmetrized Tandem Mirror GAMMA10 [Electronic resource]. ---
+\newblock The University of Tsukuba. ---
+\newblock 2016. ---
+\newblock Mode of access:
+  \BibUrl{http://www.prc.tsukuba.ac.jp/en/?page_id=795} (date of access:
+  31.01.2016).
+
+\bibitem{sumida2015high}
+\selectlanguageifdefined{english}
+High-Density Plasma Production in the GAMMA 10 Central Cell with ICRF Heating
+  on Both Anchor Cells~/ S.~Sumida [et~al.]~//
+  {Fusion Science and Technology}. ---
+\newblock 2015. ---
+\newblock Vol.~68, №~1. ---
+\newblock 445--451~p.
+
+\bibitem{imai2013gamma}
+\selectlanguageifdefined{english}
+GAMMA 10/PDX project status and future~/ T.~Imai~[et al.] // {Fusion Science
+  and Technology}. ---
+\newblock 2013. ---
+\newblock Vol.~63, №~1. ---
+\newblock P.~8--15.
+
+\bibitem{gamma10_code}
+\selectlanguageifdefined{english}
+Computer code [Electronic resource] / The University of Tsukuba. ---
+\newblock 2015. ---
+\newblock Mode of access: \BibUrl{http://www.prc.tsukuba.ac.jp/wp/}
+  (date of access: 31.01.2016).
+
+\bibitem{gol3_review}
+\selectlanguageifdefined{russian}
+Описание установки ГОЛ-3 [Электронный
+  ресурс]. ---
+\newblock 2015. ---
+\newblock Режим доступа:
+  \BibUrl{http://budker.ru/ru/Infrasructure/Ustanovki/GOL-3/GOL-3_02/}
+  ({дата обращения}: 31.01.2016).
+
+\bibitem{gol3_prog}
+\selectlanguageifdefined{russian}
+Программа исследований ГОЛ-3 [Электронный
+  ресурс] / Институт ядерной физики. ---
+\newblock 2015. ---
+\newblock Режим доступа:
+  \BibUrl{http://budker.ru/ru/Infrasructure/Ustanovki/GOL-3/GOL-3_03/}
+  ({дата обращения}: 31.01.2016).
+
+\bibitem{dimov2005}
+\selectlanguageifdefined{russian}
+{Димов,~Г.~И.} Амбиполярная ловушка~/
+  Г.~И.~Димов~// {Успехи физических наук}. ---
+\newblock 2005. ---
+\newblock Т. 175, {№}~11. ---
+\newblock {С.}~1185--1206.
+
+\bibitem{gdl_review}
+\selectlanguageifdefined{russian}
+Описание газодинамической ловушки
+  [Электронный ресурс]. ---
+\newblock Институт ядерной физики. ---
+\newblock 2013. ---
+\newblock Режим доступа:
+  \BibUrl{http://budker.ru/ru/Infrasructure/Ustanovki/GDL/GDT/} ({дата
+  обращения}: 31.01.2016).
+
+\bibitem{beklemishev2010vortex}
+\selectlanguageifdefined{english}
+{Beklemishev,~A.~D.} Vortex confinement of plasmas in symmetric mirror traps~/
+  A.~D.~Beklemishev, P.~A.~Bagryansky, M.~S.~Chaschin~// {Fusion science and
+  technology}. ---
+\newblock 2010. ---
+\newblock Vol.~57, №~4. ---
+\newblock P.~351--360.
+
+\bibitem{DOL_code}
+\selectlanguageifdefined{russian}
+{Цидулко,~Ю.~А.} Нестационарная модель
+  открытой ловушки с плещущимися ионами
+  (код DOL, версия 1.13) [Электронный ресурс] / Ю.
+  А. Цидулко. ---
+\newblock 2015. ---
+\newblock Режим доступа:
+  \BibUrl{http://budker.ru/documents/-2-Issledovanija/Ustanovki/GDL/dol.pdf}
+  ({дата обращения}: 01.02.2016).
+
+\bibitem{Kubic2007}
+\selectlanguageifdefined{english}
+{Kubic,~M.} Review of plasma parameters of the JET tokamak in various regimes
+  of its operation: bachelor thesis: 31.07.2007~/ M.~Kubic. ---
+\newblock Praga, 2007. ---
+\newblock 43~p.
+
+\bibitem{plasma_nsu}
+\selectlanguageifdefined{russian}
+{Поступаев,~В.~В.} Физика плазмы для
+  магистрантов физического факультетра НГУ
+  [Электронный ресурс] / В. В. Поступаев. ---
+\newblock 2015. ---
+\newblock Режим доступа:
+  \BibUrl{http://www.inp.nsk.su/chairs/plasma/sk/fpl.ru.shtml} ({дата
+  обращения}: 25.08.2015).
+
+\bibitem{Max_plankINST}
+\selectlanguageifdefined{english}
+The first plasma: the Wendelstein 7-X fusion device is now in operation
+  [Electronic resource]. ---
+\newblock 2015. ---
+\newblock Mode of access:
+  \BibUrl{http://www.ipp.mpg.de/3984226/12_15} (date of access: 04.02.2016).
+
+\bibitem{JT-60SA}
+\selectlanguageifdefined{english}
+JT-60SA [Electronic resource]. ---
+\newblock 2015. ---
+\newblock Mode of access: \BibUrl{http://www.jt60sa.org/b/index.htm}
+  (date of access: 04.02.2016).
+
+\bibitem{wan2009recent}
+\selectlanguageifdefined{english}
+{Wan,~B.} Recent experiments in the EAST and HT-7 superconducting tokamaks~/
+  B.~Wan~// {Nuclear Fusion}. ---
+\newblock 2009. ---
+\newblock Vol.~49, №~10. ---
+\newblock P.~1040--1058.
+
+\bibitem{globus-m}
+\selectlanguageifdefined{russian}
+Сферический токамак Глобус-М/Глобус-М (УНУ
+  Глобус-М) [Электронный ресурс]. ---
+\newblock 2015. ---
+\newblock Режим доступа: \BibUrl{http://www.ckp-rf.ru/usu/73569/}
+  ({дата обращения}: 04.02.2016).
+
+\bibitem{T15}
+\selectlanguageifdefined{russian}
+Термоядерная установка Токамак Т-15
+  [Электронный ресурс]. ---
+\newblock 2016. ---
+\newblock Режим доступа:
+  \BibUrl{http://www.nrcki.ru/pages/main/6015/8698/7145/index.shtml} ({дата
+  обращения}: 04.02.2016).
+
+\bibitem{Flower2007}
+\selectlanguageifdefined{russian}
+{Цветков,~И.~В.} Применение численных
+  методов для моделирования процессов в
+  плазме: учебное пособие~/ И.~В.~Цветков. ---
+\newblock Москва : МИФИ, 2007. ---
+\newblock {С.}~84.
+
+\bibitem{Miloch2014}
+\selectlanguageifdefined{english}
+{Miloch,~W.~J.} Plasma Physics and Numerical Simulations [Electronic source] /
+  W. J. Miloch. ---
+\newblock 2014. ---
+\newblock Mode of access:
+  \BibUrl{http://www.uio.no/studier/emner/matnat/math/MEK4470/h14/plasma.pdf}
+  (date of access: 06.02.2016).
+
+\bibitem{Kravchenya2010}
+\selectlanguageifdefined{russian}
+Кравченя, П. Д. Исследование виртуального катода
+  ленточных релятивистских электронных
+  потоков~/ П. Д. Кравченя, А. Г. Шеин, Ю. М. Ильин // {Известия ВолгГТУ}. ---
+\newblock 2010. ---
+\newblock {№}~2. ---
+\newblock {С.}~47--51.
+
+\bibitem{Kovtun2010}
+\selectlanguageifdefined{russian}
+{Ковтун,~Д.~Г.} Влияние металлических стенок
+  пространства взаимодействия на форму
+  релятивистских электронных потоков,
+  движущихся в скрещенных полях~/
+  Д.~Г.~Ковтун, П.~Д.~Кравченя, А.~Г.~Шеин~//
+  {Известия ВолгГТУ}. ---
+\newblock 2010. ---
+\newblock {№}~10. ---
+\newblock {С.}~30--36.
+
+\bibitem{Kovtun2005}
+\selectlanguageifdefined{russian}
+{Ковтун,~Д.~Г.} Особенности моделирования
+  поведения релятивистского электронного
+  потока в скрещенных полях~/ Д.~Г.~Ковтун,
+  А.~Г.~Шеин, Насачев~А.~Г.~// {Радиотехника и
+  электроника}. ---
+\newblock 2005. ---
+\newblock Т.~10. ---
+\newblock {С.}~114--118.
+
+\bibitem{yee1966numerical}
+\selectlanguageifdefined{english}
+Numerical solution of initial boundary value problems involving Maxwell’s
+  equations in isotropic media / K. S. Yee [et al.]~// {IEEE Trans. Antennas
+  Propag}. ---
+\newblock 1966. ---
+\newblock Vol.~14, №~3. ---
+\newblock P.~302--307.
+
+\bibitem{melo2009computational}
+\selectlanguageifdefined{english}
+{Melo e Silva~de Oliveira,~R.} Computational environment for simulating
+  lightning strokes in a power substation by finite-difference time-domain
+  method~/ R.~Melo e Silva~de~Oliveira, C.~L.~da~Silva Souza~Sobrinho~//
+  {Electromagnetic Compatibility, IEEE Transactions on}. ---
+\newblock 2009. ---
+\newblock Vol.~51, №~4. ---
+\newblock P.~995--1000.
+
+\bibitem{chaudhury2010computational}
+\selectlanguageifdefined{english}
+{Chaudhury,~B.} Computational studies of filamentary pattern formation in a
+  high power microwave breakdown generated air plasma~/ B.~Chaudhury,
+  J.-P.~Boeuf~// {Plasma Science, IEEE Transactions on}. ---
+\newblock 2010. ---
+\newblock Vol.~38, №~9. ---
+\newblock P.~2281--2288.
+
+\bibitem{de2002solving}
+\selectlanguageifdefined{egnlish}
+{De~Raedt,~H.} Solving the Maxwell equations by the Chebyshev method: A
+  one-step finite-difference time-domain algorithm~/ H.~De~Raedt,
+  K.~Michielsen, J.~S.~Kole~// {Preprint physics}. ---
+\newblock 2002. ---
+\newblock Vol.~7, №~3. ---
+\newblock P.~95--102.
+
+\bibitem{Rylander200075}
+\selectlanguageifdefined{english}
+{Rylander,~T.} Stable FEM-FDTD hybrid method for Maxwell's equations~/
+  T.~Rylander, A.~Bondeson~// {Computer Physics Communications}. ---
+\newblock 2000. ---
+\newblock Vol. 125, №~3. ---
+\newblock P.~75--82.
+
+\bibitem{dawson1983particle}
+\selectlanguageifdefined{english}
+{Dawson,~J.~M.} Particle simulation of plasmas~/ J.~M.~Dawson~// {Reviews of
+  modern physics}. ---
+\newblock 1983. ---
+\newblock Vol.~55, №~2. ---
+\newblock P.~403--447.
+
+\bibitem{umeda2003new}
+\selectlanguageifdefined{english}
+A new charge conservation method in electromagnetic particle-in-cell
+  simulations~/ T.~Umeda, Y.~Omura, T.~Tominaga, H.~Matsumoto~// {Computer
+  Physics Communications}. ---
+\newblock 2003. ---
+\newblock Vol. 156, №~1. ---
+\newblock P.~73--85.
+
+\bibitem{chang1992unified}
+\selectlanguageifdefined{english}
+{Chang,~Zuoyang}. Unified fluid/kinetic description of plasma
+  microinstabilities. Part I: Basic equations in a sheared slab geometry~/
+  Zuoyang~Chang, JD~Callen~// {Physics of Fluids B: Plasma Physics
+  (1989-1993)}. ---
+\newblock 1992. ---
+\newblock Vol.~4, №~5. ---
+\newblock P.~1167--1181.
+
+\bibitem{Mendoza2010}
+\selectlanguageifdefined{english}
+{Mendoza,~M}. {Three-dimensional lattice Boltzmann model for electrodynamics}~/
+  M~Mendoza, J~D~Mu{\~{n}}oz~// {Physical Review E - Statistical, Nonlinear,
+  and Soft Matter Physics}. ---
+\newblock 2010. ---
+\newblock Vol.~82, №~5. ---
+\newblock P.~1--13.
+
+\bibitem{Romatschke2011}
+\selectlanguageifdefined{english}
+{Romatschke,~P.} {Fully relativistic lattice Boltzmann algorithm}~/
+  P.~Romatschke, M.~Mendoza, S~Succi~// {Physical Review C}. ---
+\newblock 2011. ---
+\newblock Vol.~84, №~3. ---
+\newblock P.~034903.
+
+\bibitem{Mendoza2011}
+\selectlanguageifdefined{english}
+{Mendoza,~M.} {A Reliable Lattice-Boltzmann Solver for Electrodynamics : New
+  Applications in Non-linear Media}~/ M.~Mendoza, J.~D.~Munoz~// {PIERS
+  Proceedings, Marrakesh, MOROCCO, March 20–23, 2011}. ---
+\newblock 2011. ---
+\newblock Vol.~1. ---
+\newblock P.~1632--1636.
+
+\bibitem{Mendoza2008}
+\selectlanguageifdefined{english}
+{Mendoza,~M}. {Three-dimensional lattice Boltzmann model for magnetic
+  reconnection}~/ M~Mendoza, J~D~Mu{\~{n}}oz~// {Physical Review E}. ---
+\newblock 2008. ---
+\newblock Vol.~77, №~2. ---
+\newblock P.~11.
+
+\bibitem{Hupp2011}
+\selectlanguageifdefined{english}
+{Relativistic lattice Boltzmann method for quark-gluon plasma simulations}~/
+  D.~Hupp [et~al.]~// {Physical Review D -
+  Particles, Fields, Gravitation and Cosmology}. ---
+\newblock 2011. ---
+\newblock Vol.~84, №~12. ---
+\newblock P.~1--11.
+
+\bibitem{Pattison2008}
+\selectlanguageifdefined{english}
+{Progress in lattice Boltzmann methods for magnetohydrodynamic flows relevant
+  to fusion applications}~/ M.~J.~Pattison, K.~N.~Premnath, N.~B.~Morley,
+  M.~a.~Abdou~// {Fusion Engineering and Design}. ---
+\newblock 2008. ---
+\newblock Vol.~83, №~4. ---
+\newblock P.~557--572.
+
+\bibitem{Zhang2007}
+\selectlanguageifdefined{english}
+Modeling and simulation of plasma jet by lattice Boltzmann method~/
+  Haiou~Zhang, Shengde~Hu, Guilan~Wang, Jieying~Zhu~// {Applied Mathematical
+  Modelling}. ---
+\newblock 2007. ---
+\newblock Vol.~31, №~6. ---
+\newblock P.~1124--1132.
+
+\bibitem{Galanin2014}
+\selectlanguageifdefined{russian}
+{Галанин,~М.~П.} Моделирование развития
+  магниторотационной неустойчивости с
+  ипользованием параллельного RKDG алгоритма
+  для ситемы уравнений магнитной
+  гидродинамики~/ М.~П.~Галанин, В.~В.~Лукин,
+  К.~Л.~Шаповалов~// {Вычислительные методы и
+  программирование}. ---
+\newblock 2014. ---
+\newblock Т.~15. ---
+\newblock {С.}~143--153.
+
+\bibitem{iliin_algebra}
+\selectlanguageifdefined{russian}
+{Ильин,~В.~А.} Линейная алгебра и
+  аналитическая геометрия~/ В.~А.~Ильин,
+  Г.~Д.~Ким. ---
+\newblock Москва : НАУКА, 1998. ---
+\newblock 320~{с.}
+
+\bibitem{butcher1987numerical}
+\selectlanguageifdefined{english}
+{Butcher,~J.~C.} The numerical analysis of ordinary differential equations:
+  Runge-Kutta and general linear methods~/ J.~C.~Butcher. ---
+\newblock New York : Wiley-Interscience, 1987. ---
+\newblock 231~p.
+
+\bibitem{Landau2}
+\selectlanguageifdefined{russian}
+{Ландау,~Л.~Д.} Теоретическая физика. Теория
+  поля~/ Л.~Д.~Ландау, Е.~М.~Лифшиц. ---
+\newblock Москва : Наука, 1988. ---
+\newblock 460~{с.}
+
+\bibitem{Steinhauer2006}
+\selectlanguageifdefined{english}
+{Modeling of field-reversed configuration experiment with large safety
+  factor}~/ L.~Steinhauer [et~al.]~// {Physics of Plasmas}.
+  ---
+\newblock 2006. ---
+\newblock Vol.~13, №~5. ---
+\newblock P.~119--138.
+
+\bibitem{Ryzhkov2015d}
+\selectlanguageifdefined{russian}
+{{Рыжков С. В.}} Построение моделей для
+  расчета нестационарных
+  магнитно-инерциальных систем : дис. ... д-ра
+  физ.-мат. наук: 01.02.01 : защищена 20.09.15: Ph.D. thesis.
+  ---
+\newblock Москва, 2015. ---
+\newblock {С.}~254.
+
+\bibitem{Intrator2004}
+\selectlanguageifdefined{english}
+{Intrator,~T.} {A high density field reversed configuration (FRC) target for
+  magnetized target fusion: First internal profile measurements of a high
+  density FRC}~/ T.~Intrator, S.~Y.~Zhang, J.~H.~Degnan~// {Physics of
+  Plasmas}. ---
+\newblock 2004. ---
+\newblock Vol.~11, №~5. ---
+\newblock P.~2580--2585.
+
+\bibitem{matsumoto1998mersenne}
+\selectlanguageifdefined{english}
+{Matsumoto,~Makoto}. Mersenne twister: a 623-dimensionally equidistributed
+  uniform pseudo-random number generator~/ Makoto~Matsumoto,
+  Takuji~Nishimura~// {ACM Transactions on Modeling and Computer Simulation
+  (TOMACS)}. ---
+\newblock 1998. ---
+\newblock Vol.~8, №~1. ---
+\newblock P.~3--30.
+
+\bibitem{sriram2006area}
+\selectlanguageifdefined{english}
+{Sriram,~V.} An area time efficient field programmable Mersenne Twister uniform
+  random number generator~/ V.~Sriram, D.~Kearney. ---
+\newblock New York : Citeseer, 2006. ---
+\newblock P.~244--246.
+
+\bibitem{habr_rand}
+\selectlanguageifdefined{russian}
+Псевдослучайно vs. По-настоящему Случайно
+  [Электронный ресурс]. ---
+\newblock 2012. ---
+\newblock Режим доступа: \BibUrl{https://habrahabr.ru/post/137864/}
+  ({дата обращения}: 06.02.2016).
+
+\bibitem{bronshtein-math}
+\selectlanguageifdefined{russian}
+{Бронштейн,~И.~Н.} Справочник по математике~/
+  И.~Н.~Бронштейн, К.~А.~Семендяев, Р.~Ардинг. ---
+\newblock Москва : УРСС, 1996. ---
+\newblock 471~{с.}
+
+\bibitem{kd2004}
+\selectlanguageifdefined{russian}
+{Ковтун,~Д.~Г.} Динамика релятивистского
+  электронного потока в скрещенных полях :
+  дис. ... канд. физ.-мат. наук: 01.01.01 : защищена
+  06.06.04~/ Д.~Г.~Ковтун. ---
+\newblock Волгоград, 2004. ---
+\newblock 122~{с.}
+
+\bibitem{habr2}
+\selectlanguageifdefined{russian}
+Введение в технику оптимизации циклов
+  [Электронный ресурс]. ---
+\newblock 2011. ---
+\newblock Режим доступа: \BibUrl{https://habrahabr.ru/post/124910/}
+  ({дата обращения}: 05.02.2016).
+
+\bibitem{openMPbook}
+\selectlanguageifdefined{english}
+{Антонов,~А.~С.} Параллельные
+  программирование с использованием
+  технологии МРI~/ А.~С.~Антонов. ---
+\newblock Москва : Изд-во МГУ, 2009.
+
+\bibitem{habr1}
+\selectlanguageifdefined{russian}
+{Степанова,~Е.~К.} Про техники оптимизации
+  [Электронный ресурс] / Е. К. Степанова ---
+\newblock 2011. ---
+\newblock Режим доступа: \BibUrl{http://habrahabr.ru/post/111021/}
+  ({дата обращения}: 05.02.2016).
+
+\bibitem{anikeev2012}
+\selectlanguageifdefined{russian}
+{Эксперименты по амбиполярному удержанию
+  плазмы в установке ГДЛ / А. В. Аникеев [и
+  др.]}~// {ВАНТ. Сер. Термоядерный синтез}. ---
+\newblock 2012. ---
+\newblock {№}~4. ---
+\newblock {С.}~3--13.
+
+\end{thebibliography}

@@ -1,0 +1,119 @@
+%\RequirePackage[l2tabu,orthodox]{nag} % Раскомментировав, можно в логе получать рекомендации относительно правильного использования пакетов и предупреждения об устаревших и нерекомендуемых пакетах
+% Формат А4, 14pt (ГОСТ Р 7.0.11-2011, 5.3.6)
+\documentclass[a4paper,14pt]{extreport}
+
+% для эпиграфов
+\usepackage{epigraph} 
+
+\input{common/packages}  % Пакеты общие для диссертации и автореферата
+\input{Dissertation/dispackages}         % Пакеты для диссертации
+\input{Dissertation/userpackages}        % Пакеты для специфических пользовательских задач
+
+\input{Dissertation/setup}               % Упрощённые настройки шаблона
+
+\input{Dissertation/preamblenames}       % Переопределение именований, чтобы можно было и в преамбуле использовать
+\input{common/newnames}  % Новые переменные, которые могут использоваться во всём проекте
+
+\input{common/styles}    % Стили общие для диссертации и автореферата
+\input{Dissertation/disstyles}           % Стили для диссертации
+\input{Dissertation/userstyles}          % Стили для специфических пользовательских задач
+\input{biblio/bibliopreamble}% Настройки библиографии из внешнего файла (там же выбор: встроенная или на основе biblatex)
+
+\input{Dissertation/inclusioncontrol}    % Управление компиляцией отдельных частей диссертации
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{indentfirst}
+\usepackage[ddmmyyyy]{datetime}
+\usepackage{epigraph}   
+\usepackage{graphicx}
+	\graphicspath{{fig/}}
+
+
+% Объявление собвстенных функций
+\DeclareMathOperator{\Div}{div}
+\DeclareMathOperator{\Rot}{rot}
+\DeclareMathOperator{\Grad}{grad}
+\DeclareMathOperator{\Arsh}{Arsh}
+\DeclareMathOperator{\const}{const}
+\newcommand{\parder}[2]{\frac{\partial {#1}}{\partial {#2}}}
+\newcommand{\vecmult}[2]{\left[ \vec{{#1}},\vec{{#2}}   \right]}
+\newcommand{\abs}[1]{\left| #1  \right|}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+
+
+\usepackage{listings}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.97,0.97,0.97}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}     
+
+\usepackage{cases} 			% Нумерация внутри скобок
+\usepackage{enumitem}
+\setlist[enumerate,itemize]{leftmargin=0pt,itemindent=3.8em}
+
+%\date{Время ведения работы: \\ 19/04/2015 -- \today}
+\date{\ }
+\author{Тофтул И. Д. \\ Научный руководитель: Ковтун Д. Г.}
+\title{Моделирование процессов удержания плазмы в неоднородных полях}
+
+
+\begin{document}
+
+%\maketitle
+
+\input{common/renames}                   % Переопределение именований
+
+\setcounter{page}{3}			       % Сдвиг счетчика на 3
+ 
+% Структура диссертации (ГОСТ Р 7.0.11-2011, 4)
+%\include{Dissertation/title}          % Титульный лист (печатается отдельно)
+\include{Dissertation/contents}        % Оглавление
+
+\include{Dissertation/acronyms}        % Список сокращений и условных обозначений
+
+\include{Dissertation/introduction}    % Введение
+
+\include{Dissertation/chapter1}        % Глава 1 -- лит. обзор
+%\include{Dissertation/chapter1.5}	   % Глава 1.5 -- теория, построение мат. модели
+\include{Dissertation/chapter2}        % Глава 2 -- числ. решение
+\include{Dissertation/chapter3}		   % Глава 3 -- проверка программы
+\include{Dissertation/chapter4}	       % Глава 4 -- числ. эксп
+
+
+
+\include{Dissertation/conclusion}      % Заключение
+
+
+%\include{Dissertation/dictionary}      % Словарь терминов
+\include{Dissertation/references}      % Список литературы
+%\include{Dissertation/lists}           % Списки таблиц и изображений (иллюстративный материал)
+\include{Dissertation/appendix}        % Приложения
+
+\end{document}

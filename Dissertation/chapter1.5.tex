@@ -1,0 +1,446 @@
+%убрать
+
+\chapter{Уравнения движения заряженных частиц} \label{ch2}
+
+
+
+\section{Общий вид уравнения движения заряженной частицы в электромагнитном поле}
+
+Согласно \cite{Landau2}, уравнение движения частицы массы покоя $m$ и заряда $q$ в полях $\vec{E}$ и $\vec{B}$ можно записать в виде
+\begin{equation}
+\frac{d \vec{p}}{dt} = q \vec{E} + q \vecmult{v}{B},
+\label{eq:2Newton}
+\end{equation} 
+где точкой обозначена полная производная по времени, а $\vec{v}$ и $\vec{p}$ --- скорость и импульс частицы соответственно. Последний можно записать, как
+\begin{equation}
+\vec{p} = \frac{m \vec{v}}{\sqrt{1 - v^2/c^2}} = \beta m \vec{v},
+\label{eq:rel_pulse}
+\end{equation}
+где $c = 299\ 792\ 458\ \frac{\text{м}}{\text{с}}$ --- предельная скорость движения частиц и распространения взаимодействий. Величина 
+\begin{equation}
+\beta = \frac{1}{\sqrt{1 - v^2/c^2}}
+\end{equation}
+носит название Лоренц-фактора.
+
+Уравнение \eqref{eq:2Newton} удаётся разрешить аналитически только в случае определенных (достаточно тривиальных) комбинаций полей $\vec{E}$ и $\vec{B}$. В большинстве же случаев приходится прибегать к численному решению.
+
+\subsection{Некоторые энергетические соотношения}
+
+Полная энергия частицы (без потенциальной энергии в поле) равна~\cite{Landau2} 
+\begin{equation}
+\mathscr{E} =\frac{ mc^2}{\sqrt{1 - v^2/c^2}}.
+\label{eq:full_energy}
+\end{equation}
+Определим изменение энергии частицы со временем
+\begin{equation}
+\frac{d \mathscr{E}}{dt} = \frac{d}{dt} \left( \frac{mc^2}{\sqrt{ 1 - v^2/c^2}} \right) = \beta^3 m \left(\vec{v} \cdot \frac{d\vec{v}}{dt}\right).
+\label{eq:dE_dt-first}
+\end{equation}
+С другой стороны
+\begin{equation}
+\frac{d\vec{p}}{dt} = \frac{d}{dt} \left(  \frac{m \vec{v}}{\sqrt{1 - (\vec{v} \cdot \vec{v})/c^2}}  \right) = m \left( \beta \frac{d \vec{v}}{dt} + \frac{\beta^3}{c^2} \left(\vec{v} \cdot \frac{d \vec{v}}{dt}  \right) \vec{v} \right).
+\label{eq:full_ddddt}
+\end{equation}
+Домножим скалярно последнее выражение на $\vec{v}$:
+\begin{equation}
+\vec{v} \cdot \frac{d \vec{p}}{dt} = m \left(\vec{v} \cdot \frac{d \vec{v}}{dt}\right) \left[\beta + \frac{\beta^3 v^2}{c^2}\right] = \beta^3 m \left(\vec{v} \cdot \frac{d\vec{v}}{dt}\right).
+\label{eq:dt_dt_v}
+\end{equation}
+Сравнивая выражения \eqref{eq:dE_dt-first} и \eqref{eq:dt_dt_v}, запишем
+\begin{equation}
+\frac{d \mathscr{E}}{dt} = \vec{v} \cdot \frac{d\vec{p}}{dt}.
+\end{equation}
+Подставляя сюда \eqref{eq:2Newton} и замечая, что $\vecmult{v}{B} \cdot \vec{v} = 0$, имеем
+\begin{equation}
+\frac{d \mathscr{E}}{dt} = q \vec{E} \cdot \vec{v}.
+\label{eq:energy_lost}
+\end{equation}
+
+Выражение \eqref{eq:energy_lost} имеет достаточно большой физический смысл --- изменение энергии со временем есть работа, произведённая полем над частицей в единицу времени, причём \textit{работу совершает только электрическое поле}.
+
+\subsection{Простейшие аналитические задачи о движении релятивистской заряженной частицы}
+
+\subsubsection{Движение в постоянном однородном электрическом поле}
+
+Положим, что в пространстве есть только постоянное однородное электрическое поле $\vec{E}$. Тогда уравнение движения \eqref{eq:2Newton} примет вид
+\begin{equation}
+\dot{\vec{p}} = q \vec{E}
+\label{eq:Eonly_2Newton}
+\end{equation}
+
+В силу характера взаимодействия поля $\vec{E}$ на частицу, частица, очевидно, будет совершать плоское движение, поэтому можно ограничится двумерной задачей. 
+
+Направим ось $x$ вдоль поля $\vec{E}$. Тогда \eqref{eq:Eonly_2Newton} примет вид
+\begin{equation*}
+\begin{cases}
+\dot{p}_x = q E \\
+\dot{p}_y = 0 \\
+\dot{p}_z = 0
+\end{cases}
+\end{equation*}
+
+ Положим, что при $t = 0$ частица имела импульс
+\begin{equation*}
+p_x(0) = p_z(t) = 0, \qquad p_y(0) = p_0,
+\end{equation*}
+тогда
+\begin{equation}
+\begin{cases}
+p_x = qEt \\
+p_y = p_0
+\end{cases}.
+\label{eq:pulse_solve}
+\end{equation}
+
+
+С другой стороны, из \eqref{eq:rel_pulse} и \eqref{eq:full_energy} следует, что 
+\begin{equation}
+\mathscr{E} =  \sqrt{m^2 c^4 + p^2c^2}.
+\label{eq:energgg}
+\end{equation}
+Подставляя сюда \eqref{eq:pulse_solve}, получим
+\begin{equation}
+\mathscr{E} = \sqrt{m^2c^4 + c^2 p_0^2 + (cqEt)^2} = \sqrt{\mathscr{E}_0^2 + (cqEt)^2},
+\end{equation}
+где $\mathscr{E}_0  = \sqrt{m^2c^4 + c^2 p_0^2}$ имеет смысл энергии частицы при $t =0$.
+
+Из \eqref{eq:rel_pulse} и \eqref{eq:full_energy} также следует, что 
+\begin{equation}
+\vec{v} = \frac{\vec{p}c^2}{\mathscr{E}}.
+\label{eq:v_and_p}
+\end{equation}
+А так как $\dot{\vec{r}} \equiv  \vec{v}$, то
+\begin{equation*}
+\begin{cases}
+\dot{x} = \dfrac{c^2qEt}{\sqrt{\mathscr{E}_0^2 + (cqEt)^2}} \\ \\
+\dot{y} = \dfrac{p_0c^2}{\sqrt{\mathscr{E}_0^2 + (cqEt)^2}}
+\end{cases}.
+\end{equation*}
+Положим, что $$\vec{r}(0) = 0.$$ Тогда решая\footnote{Известно \cite{fiht2} следующее соотношение: $$\int \frac{dx}{\sqrt{x^2 + 1}} = \ln \left| x + \sqrt{x^2 + 1} \right| + C = \Arsh x + C,$$ при $x \in \mathbb{R}$.}
+ эту систему, можно получить параметрическое уравнение движения:
+\begin{equation}
+\begin{cases}
+x(t) = \dfrac{1}{qE} \left(\sqrt{\mathscr{E}_0^2 + (cqEt)^2 } - \mathscr{E}_0 \right)  \\ \\
+y(t) = \dfrac{p_0c}{qE} \Arsh \dfrac{cqEt}{\mathscr{E}_0}
+\end{cases}
+\label{eq:analytical12}
+\end{equation}
+
+Траектория рассмотренной частицы будет представлять собой цепную линию.
+
+\subsubsection{Движение в постоянном однородном магнитном поле}
+
+Положим, что в пространстве есть постоянное однородное магнитное поле $\vec{B}$, вдоль которого направим ось $z$. Тогда уравнение движения \eqref{eq:2Newton} примет вид
+\begin{equation*}
+\dot{\vec{p}} = q \vecmult{v}{B}.
+\end{equation*}
+Согласно \eqref{eq:energy_lost} магнитное поле не совершает работы, а значит $ \mathscr{E} = \const$. Тогда, в силу \eqref{eq:v_and_p}, можно записать
+\begin{equation}
+\dot{\vec{v}} = \frac{qc^2}{\mathscr{E}} \vecmult{v}{B}
+\end{equation}
+или покомпонентно
+\begin{equation}
+\begin{cases}
+\dot{v}_x = \omega_c v_y\\
+\dot{v}_y = - \omega_c v_x\\
+\dot{v}_z = 0
+\end{cases},
+\label{eq:system_B_only}
+\end{equation}
+где $\omega_c = \dfrac{qc^2B}{\mathscr{E}}$. Данную величину принято \cite{dnestrovsky} называть циклотронной частотой.
+
+Для простоты положим следующие начальные условия:
+\begin{equation}
+\vec{r} (0) = 0, \qquad \vec{v}(0) =  v_{0 \tau} \vec{e}_y + v_{0z} \vec{e}_z.
+\end{equation}
+Тогда решение \eqref{eq:system_B_only} запишется в виде
+\begin{equation}
+\begin{cases}
+x =  \rho \left( 1 - \cos \omega_c t \right) \\
+y =  \rho \sin \omega_c t  \\
+z = v_{0z} t
+\end{cases},
+\label{eq:analytical2}
+\end{equation}
+где $\rho = \dfrac{v_{0\tau}}{\omega_c} = \dfrac{v_{0 \tau} \mathscr{E}}{qc^2B}$ --- Ларморовский радиус \cite{dnestrovsky}. Отсюда видно, что траектория частицы будет представлять собой винтовую линию радиуса $\rho$ <<закрученную>> вокруг $\vec{B}$.
+
+\subsubsection{Частный случай движение во взаимно перпендикулярных постоянных однородных электрическом и магнитном полях}
+
+
+Рассмотрим движение заряженной частицы в скрещенных постоянных однородных электрическом и магнитном полях, причём $\abs{\vec{E}} = c \abs{\vec{B}}$. Выберем систему координат так, что
+\begin{equation*}
+\vec{E} = E  \vec{e}_y, \qquad \vec{B} = B  \vec{e}_z.
+\end{equation*}
+В этом случае уравнение движения \eqref{eq:2Newton} примет вид
+\begin{equation*}
+\frac{d \vec{p}}{dt} = q \vec{E} + q \vecmult{v}{B}
+\end{equation*}
+или
+\begin{equation}
+\begin{cases}
+\dot{p}_x = \dfrac{q}{c} E v_y \\
+\dot{p}_y = q E \left( 1 - \dfrac{v_x}{c} \right) \\
+\dot{p}_z = 0
+\end{cases}.
+\label{eq:task3- system}
+\end{equation}
+
+Положим, что в момент $t =0$ у частицы
+\begin{equation}
+\vec{r} = 0, \quad  p_x(0) = p_{0x}, \quad p_y(0) = 0, \quad p_z(0) = p_z. 
+\end{equation}
+
+Далее, заметим, что изменение энергии со времени \eqref{eq:energy_lost} в рамках данной задачи запишется, как
+\begin{equation*}
+\frac{d\mathscr{E}}{dt} = q E v_y.
+\end{equation*}
+Тогда из первого и третьего уравнения системы \eqref{eq:task3- system} вытекает, что 
+\begin{equation*}
+p_z = \const, \qquad \mathscr{E} - c p_x = \const = \alpha.
+\end{equation*}
+Используя равенство 
+\begin{equation*}
+\mathscr{E}^2 - c^2p_x^2 = \left( \mathscr{E} - c p_x \right)\left( \mathscr{E} + c p_x \right) = m^2 c^4 + c^2 p_z^2 + c^2 p_y^2 = \xi^2 + c^2 p_y^2,
+\end{equation*}
+где $\xi^2 = m^2 c^4 + c^2 p_z^2 = \const$, можно записать
+\begin{equation}
+\mathscr{E}= \mathscr{E} (p_y) = \frac{\alpha}{2} + \frac{c^2 p^2_y + \xi^2}{2 \alpha},
+\label{eq:raz}
+\end{equation}
+\begin{equation}
+p_x =p_x (p_y) = - \frac{\alpha}{2c} + \frac{c^2 p_y^2 + \xi^2}{2\alpha c} = \frac{\xi^2 - \alpha^2}{2 \alpha c} + \frac{c}{2 \alpha} p_y^2.
+\label{eq:dva}
+\end{equation}
+
+
+Далее, обратимся ко второму уравнения системы \eqref{eq:task3- system}. Домножив его на $\mathscr{E}$, получим
+\begin{equation*}
+\mathscr{E} \frac{d p_y}{dt} = qE \left( \mathscr{E} - c \frac{\mathscr{E} v_x}{c^2} \right) = q E \left(  \mathscr{E} - c p_x  \right) = q E \alpha,
+\end{equation*}
+\begin{equation}
+\mathscr{E} \frac{d p_y}{dt} = q E \alpha.
+\label{eq:dt_and_dpy}
+\end{equation}
+Отсюда
+\begin{equation*}
+\int \limits_{0}^{p_y} \mathscr{E} dp_y = \int \limits_0^t qE \alpha dt,
+\end{equation*}
+
+\begin{equation*}
+\int \limits_0^{p_y} \left(\frac{\alpha}{2} + \frac{c^2 p^2_y + \xi^2}{2 \alpha}\right) dp_y =  qE \alpha t
+\end{equation*}
+или окончательно
+\begin{equation}
+2qEt = \frac{c^2}{3 \alpha^2} p_y^3  + \left(  1 + \frac{\xi^2}{\alpha^2}  \right) p_y.
+\label{eq:ans0}
+\end{equation}
+
+Для определения траектории движения частицы воспользуемся выражением \eqref{eq:v_and_p}, из которого следует, что
+\begin{equation}
+ dx = \frac{c^2 p_x}{\mathscr{E}} dt, \quad  dy =  \frac{c^2 p_y}{\mathscr{E}} dt, \quad  dz = \frac{c^2 p_z}{\mathscr{E}} dt.
+\end{equation}
+Сведя интегрирование к переменной $p_y$ с помощью \eqref{eq:raz}, \eqref{eq:dva} и \eqref{eq:dt_and_dpy}, получим 
+\begin{equation*}
+dx =  \frac{c^2 p_x}{ qE\alpha }  dp_y = \left[ \frac{c^2}{ qE\alpha } \cdot \frac{\xi^2 - \alpha^2}{2 \alpha c} +  \frac{c^2}{ qE\alpha } \cdot \frac{c}{2 \alpha} p_y^2  \right] d p_y.
+\end{equation*}
+Заметим, что в выражение \eqref{eq:ans0} является кубической параболой относительно $p_y$, причём оба коэффициента при  $p_y$ одного знака, а это значит, что наблюдается однозначность вида $t (p_y = 0) = 0$. Тогда последнее выражение можно проинтегрировать в следующих пределах:
+\begin{equation*}
+\int \limits_0^x dx =  \frac{c}{2 q E \alpha}  \int \limits_0^{p_y} \left[ \left(  \xi^2 - \alpha^2  \right) + c^2 p_y^2 \right] dp_y
+\end{equation*}
+или окончательно
+\begin{equation}
+x = \frac{c}{2qE} \left( \frac{\xi^2}{\alpha^2}  - 1  \right) p_y + \frac{c^3}{6qE \alpha^2} p_y^3.
+\label{eq:ans1}
+\end{equation}
+Для двух других компонент аналогично:
+\begin{equation}
+ y = \frac{c^2}{2 \alpha q E} p_y^2, \qquad z = \frac{p_z c^2}{qE \alpha} p_y.
+ \label{eq:ans2}
+\end{equation}
+
+Выражения \eqref{eq:ans0}, \eqref{eq:ans1} и \eqref{eq:ans2} полностью определяют  движение частицы.
+
+
+\subsection{Движение в произвольных взаимно перпендикулярных постоянных однородных электрическом и магнитных полях}
+
+Задача о движении во взаимно перпендикулярных и произвольных по величине полях $\vec{E}$ и $\vec{B}$ надлежащим преобразованием системы отсчёта сводится к задачи о движении в чисто электрическом или в чисто магнитном поле.
+
+Электрическое и магнитное поля, как и большинство физических величин, относительны, т.е. их свойства различны в разных системах отсчёта. 
+
+Пусть имеется две системы отсчёта: лабораторная $K$ и подвижная $K'$, которая движется со скоростью $\vec{V}$, относительно лабораторной. Для полей справедливы  преобразования Лоренца \cite{Landau2}:
+\begin{eqnarray}
+\vec{E}_{\parallel}' = \vec{E}_{\parallel}, &\qquad& \vec{E}_{\perp}' = \frac{\vec{E}_{\perp} - \vecmult{V}{B_{\perp}}}{\sqrt{1 - V^2/c^2}}, \nonumber
+\\  \label{eq:lorence}  \\
+\vec{B}_{\parallel}' = \vec{B}_{\parallel}, &\qquad& \vec{B}_{\perp}' = \frac{\vec{B}_{\perp} +  \frac{1}{c^2}\vecmult{V}{E_{\perp}}}{\sqrt{1 - V^2/c^2}}. \nonumber
+\end{eqnarray}
+
+
+
+Поставим задачу следующим образом: найти траекторию движения частицы с зарядом $q$ и массой $m$, которая в начальный момент времени $t = 0$ имеет
+\begin{equation}
+\vec{r}_0 = 0, \qquad   \vec{v}_0 = \left\{  0, v_0, 0  \right\}
+\end{equation}
+в системе $K$, где есть поля
+\begin{equation}
+\vec{E} = \left\{E, 0 , 0  \right\}  , \qquad \vec{B} = \left\{ 0, 0, B \right\}.
+\end{equation}
+
+Найдём скорость $\vec{V}$ такой подвижной системы отсчёта $K'$, в которой
+\begin{equation}
+\vec{E}' = 0, \qquad \vec{B}' =\left\{ 0, 0, B' \right\}.
+\end{equation}
+Тогда из преобразование Лорленца \eqref{eq:lorence} следует, что искомая скорость будет равна
+\begin{equation}
+\vec{V} = \left\{0 ,  - \frac{E}{B} , 0 \right\},
+\end{equation}
+а магнитное поле $B'$ будет определятся, как
+\begin{equation}
+B' = \frac{B  - \frac{V E}{c^2}}{\sqrt{1 - V^2/c^2}} = \frac{B  + \frac{ E^2}{Bc^2}}{\sqrt{1 - V^2/c^2}}
+\end{equation}
+или
+\begin{equation}
+B'  = \frac{B \left(1 + \frac{(E/B)^2}{c^2}\right)}{\sqrt{1  - \frac{(E/B)^2}{c^2} }}.
+\end{equation}
+Решение в системе $K'$ уже рассмотрено. Траекторию частицы $\vec{r}' = \vec{r}'(t')$ определяет система \eqref{eq:analytical2}. Для того, чтобы перейти в систему $K$, а значит и найти искомую траекторию, воспользуемся следующими преобразованиями:
+
+\begin{equation}
+x = x'(t'), \qquad y = \frac{y'(t') + Vt'}{\sqrt{1 - V^2/c^2}}, \qquad z = z'(t'), \qquad t' = \frac{t - \frac{V}{c^2}y}{\sqrt{1 - V^2/c^2}}.
+\label{eq:fsdfdsf}
+\end{equation}
+
+Стоит также учесть, что при переходе в систему $K'$ изменятся и начальные условия для решения \eqref{eq:analytical2}. А именно
+\begin{equation}
+v_0' = \frac{v_0 - V}{1 - \frac{v_0 V}{c^2}}.
+\end{equation}
+
+\textit{Замечание:} однозначно выразить $t' = t'(t)$ не получается. Поэтому при численном решении используется просто другой шаг по времени, который также получается из преобразований Лоренца:
+\begin{equation}
+dt = \frac{dt'}{\sqrt{1 - V^2/c^2}}.
+\end{equation}
+
+
+
+\section{Взаимодействие частиц друг с другом}
+
+Современной физике на данный момент известно \cite{ivanov2012} четыре фундаментальных взаимодействия:
+\begin{enumerate}
+\item гравитационное ($r \sim \infty$);
+\item электромагнитное ($r \sim \infty$);
+\item сильное ($r \sim 10^{-15}$ м);
+\item слабое ($r \sim 10^{-18}$ м).
+\end{enumerate}
+Здесь в скобках указан характерный радиус взаимодействия $r$. 
+
+В силу геометрических параметров рассматриваемой задачи, сильные и слабые взаимодействия пренебрегаются. Кроме того, гравитационное взаимодействие примерно на 36 порядков слабее электромагнитного, а учитывая характерные времена моделирования ($\tau \sim 10^{-8}\div10^{-11}$), то им тоже можно пренебречь.
+
+Таким образом, определяющим взаимодействием является именно электромагнитное. Рассмотрим его подробнее.
+
+\subsection{Потенциалы электромагнитного поля в вакууме}
+
+Источниками электромагнитного поля являются заряженные частицы. Для начала рассмотрим наиболее общий случай, а потом сделаем ряд упрощений, чтобы получить ряд возможных моделей.
+
+\subsubsection{Потенциалы Лиенара-Вихерта}
+
+Пусть в однородном изотропном пространстве есть некоторая точечная частица с зарядом $q$, причём
+\begin{equation}
+\vec{r} = \vec{r}_0(t), \qquad \vec{v}(t) = \dot{\vec{r}}_0.
+\end{equation}
+Тогда плотность заряда $\rho$ и плотность тока $\vec{j}$ можно выразить с помощью $\delta$-функции:
+\begin{eqnarray}
+\rho(\vec{r},t) &=& q \delta(\vec{r} - \vec{r}_0(t)), \\
+\vec{j}(\vec{r},t) &=& q \vec{v}(t) \delta(\vec{r} - \vec{r}_0(t)).
+\end{eqnarray}
+Далее, скалярный и векторный потенциалы с учётом запаздывания будут соответственно равны:
+\begin{equation}
+\varphi(\vec{r},t) = \frac{1}{4 \pi \varepsilon_0} \int \limits_{\infty} \frac{\rho(\vec{r}',t - \frac{|\vec{r} - \vec{r}'|}{c})}{|\vec{r} - \vec{r}'|} dV',
+\label{eq:phi_poy0}
+\end{equation}
+\begin{equation}
+\vec{A} = \frac{\mu_0}{4 \pi} \int \limits_{\infty} \frac{\vec{j (\vec{r}',t - \frac{|\vec{r} - \vec{r}'|}{c}) }}{|\vec{r} - \vec{r}'|} dV'.
+\label{eq:A_pot0}
+\end{equation}
+Обозначим 
+\begin{equation}
+\vec{R} = \vec{r}' - \vec{r},
+\end{equation}
+\begin{equation}
+\tau = t - \frac{R(\tau)}{c}.
+\label{eq:wait_for_me2}
+\end{equation}
+
+Используя свойство интегрирования $\delta$-функции, перепишем \eqref{eq:phi_poy0} и \eqref{eq:A_pot0} как
+\begin{equation}
+\varphi(\vec{r},t) = \frac{1}{4 \pi \varepsilon_0} \int \limits_{\infty}  \int \limits^{+\infty}_{- \infty}  \frac{\rho(\vec{r}',t')}{R} \delta(t' - \tau) dt' dV',
+\end{equation}
+\begin{equation}
+\vec{A}(\vec{r},t) = \frac{\mu_0}{4 \pi} \int \limits_{\infty}  \int \limits^{+\infty}_{- \infty}  \frac{\vec{j}(\vec{r}',t')}{R} \delta(t' - \tau) dt' dV'.
+\end{equation}
+А так как
+\begin{equation}
+\frac{1}{4 \pi c \varepsilon_0} = \frac{\mu_0 c}{4 \pi},
+\end{equation}
+то можно составить 4-потенциал
+\begin{equation}
+A_{\nu} (\vec{r},t) = \frac{\mu_0c}{4\pi} \int \limits_{\infty}  \int \limits^{+\infty}_{- \infty} \frac{J_{\nu} (\vec{r}',t') }{R} \delta (t' - \tau) dt' dV',
+\end{equation}
+где $A_{\nu} (\vec{r},t) = \left\{ \varphi , c\vec{A} \right\}$, а $J_{\nu} = \left\{  \rho, \vec{j} \right\}$. Для точечной частицы 4-плотность тока
+\begin{equation}
+J_{\nu} = q v_{\nu} \delta \left( \vec{r} - \vec{r}_0(t)  \right),
+\end{equation}
+где $v_{\nu} = \left\{ c, \vec{v}  \right\}$. Тогда 
+\begin{equation}
+A_{\nu} (\vec{r} , t) = \frac{q \mu_0c}{4\pi} \int \limits_{\infty} \int \limits_{- \infty}^{+\infty}  \frac{v_{\nu(t')}}{R(t')} \delta (\vec{r}' - \vec{r}_0(t)) \delta \left(  t' - \tau  \right) dt' dV'.
+\end{equation}
+Проинтегрировав по $dV'$, получим
+\begin{equation}
+A_{\nu} (\vec{r} , t) = \frac{q \mu_0c}{4\pi} \int \limits_{- \infty}^{+\infty} \frac{v_{\nu(t')}}{R(t')} \delta \left( t' - t + \frac{R(t')}{c} \right),
+\end{equation}
+где $R(t') = \left| \vec{r} - \vec{r}_0(t') \right|$. Далее, известно \cite{Landau2}, что
+\begin{equation}
+\int F(x) \delta \left( f(x) \right) dx = \sum_s \frac{F(x_s)}{f'(x_s)},
+\label{eq:hitrost}
+\end{equation} 
+где $f(x_s) = 0$. Используя \eqref{eq:hitrost}, получим
+\begin{equation}
+A_{\nu} (\vec{r},t) = \frac{q \mu_0c}{4\pi} \frac{v_{\nu}(\tau)}{R(\tau) \frac{\partial f}{\partial \tau}},
+\label{eq:almost_pot}
+\end{equation}
+где
+\begin{equation}
+f(\tau) = \tau - t + \frac{R(\tau)}{c} = 0.
+\end{equation}
+
+Распишем частную производную в \eqref{eq:almost_pot}:
+\begin{equation*}
+\frac{\partial f}{\partial \tau} = 1 + \frac{\partial}{\partial \tau} \frac{\left| \vec{r} - \vec{r}_0(\tau) \right|}{c} = 1 + \frac{\partial}{\partial \tau} \frac{ \sqrt{r^2 - 2\vec{r} \cdot \vec{r}_0 (\tau) + r_0^2(\tau)} }{c}
+\end{equation*}
+\begin{equation}
+\frac{\partial f}{\partial \tau} = 1 - \frac{1}{c} \frac{\vec{v} \cdot \vec{R}}{R}.
+\label{eq:prod}
+\end{equation}
+Подставив \eqref{eq:prod} в \eqref{eq:almost_pot}, получим выражение для 4-потенциала. Выделив из него скалярную и векторную часть, получим выражения для запаздывающих потенциалов:
+\begin{equation}
+\begin{cases}
+\varphi (\vec{r},t) = \dfrac{q}{4 \pi \varepsilon_0} \cdot \dfrac{1}{R - \dfrac{\vec{R} \cdot \vec{v}}{c}} \\ \\
+\vec{A} (\vec{r}, t) = \dfrac{q \mu_0}{4 \pi} \cdot \dfrac{\vec{v}}{R - \dfrac{\vec{R} \cdot \vec{v}}{c}}
+\end{cases}.
+\end{equation}
+Данные потенциалы также называют \textit{потенциалами Лиенара-Вихерта}. Для того, чтобы найти выражения для полей, необходимо вычислить
+\begin{eqnarray}
+\vec{E} &=& - \Grad \varphi - \parder{\vec{A}}{t}, \\
+\vec{B} &=& \Rot \vec{A},
+\end{eqnarray}
+где дифференцирование по координате и по времени производится в точке $\vec{r}$ в момент $t$. Выполнив необходимые преобразования, можно получить следующие выражения:
+\begin{equation}
+\vec{E} = \dfrac{q}{4 \pi \varepsilon_0} \dfrac{\left( 1 - \dfrac{v^2}{c^2} \right) \left( \vec{R} - \dfrac{\vec{v} R}{c}  \right) }{\left( R - \dfrac{\vec{v} \cdot \vec{ R}}{c} \right)^3} + \dfrac{q}{4 \pi \varepsilon_0 c^2} \dfrac{\left[ \vec{R} , \left[ \vec{R} - \dfrac{\vec{v}R}{c} , \dot{\vec{v}}  \right]  \right]}{\left( R - \dfrac{\vec{v} \cdot \vec{ R}}{c} \right)^3},
+\label{eq:opt_LV_E_early2}
+\end{equation}
+\begin{equation}
+\vec{B} = \frac{1}{c} \frac{\vecmult{R}{E}}{R}.
+\label{eq:opt_LV_B_early2}
+\end{equation}
+Здесь $\dot{\vec{v}} = \partial \vec{v} / \partial \tau$; все величины в правых сторонах берутся в момент времени $\tau$, определяемым уравнением \eqref{eq:wait_for_me2}. Кроме того, магнитное поле получается перпендикулярным к электрическому во всём пространстве.
+
+
+
+
