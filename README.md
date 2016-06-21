@@ -18,7 +18,7 @@
 * Кодировка: UTF-8.
 * Стандарт: ГОСТ Р 7.0.11-2011.
 * Поддерживаемые реализации библиографии: встроенная на движке BibTeX.
-* Изменен файл [utf8gost780u.bst](BibTeX-Styles/utf8gost780u.bst) на [utf8gost780u_kostyl.bst](BibTeX-Styles/utf8gost780u_kostyl.bst). Однака, всё равно некоторые изменния приходится вводить в файл [bachelor-dissertation.bbl](bachelor-dissertation.bbl) для полного соответствия с нормами университета.
+* Изменен файл [utf8gost780u.bst](BibTeX-Styles/utf8gost780u.bst) на [utf8gost780u_kostyl.bst](BibTeX-Styles/utf8gost780u_kostyl.bst). Однако, всё равно некоторые изменния приходится вводить в файл [bachelor-dissertation.bbl](bachelor-dissertation.bbl) для полного соответствия с нормами университета.
 
 
 ## Структура
