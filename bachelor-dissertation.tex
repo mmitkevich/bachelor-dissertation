@@ -94,6 +94,14 @@
  
 % Структура диссертации (ГОСТ Р 7.0.11-2011, 4)
 %\include{Dissertation/title}          % Титульный лист (печатается отдельно)
+
+% Отсутствие нумерации страниц для реферата
+\fancyhf{}                         
+\include{Dissertation/ref}
+\fancyhf{}                          % Очищаем текущие значения
+\fancyfoot[C]{\thepage}             % Печатаем номер страницы на середине верхнего поля
+\renewcommand{\headrulewidth}{0pt}  % Убираем разделительную линию
+
 \include{Dissertation/contents}        % Оглавление
 
 \include{Dissertation/acronyms}        % Список сокращений и условных обозначений
@@ -113,6 +121,6 @@
 
 \include{Dissertation/references}      % Список литературы
 %\include{Dissertation/lists}           % Списки таблиц и изображений (иллюстративный материал)
-\include{Dissertation/appendix}        % Приложения
+%\include{Dissertation/appendix}        % Приложения
 
 \end{document}
